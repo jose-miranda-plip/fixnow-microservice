@@ -64,6 +64,6 @@ public class IncidenciaController {
 
     @GetMapping("/status")
     public String status(){
-        return "Servicio funcionando correctamente";
+        return "OK";
     }
 }
