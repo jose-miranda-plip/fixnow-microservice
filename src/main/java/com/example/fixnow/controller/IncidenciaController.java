@@ -61,4 +61,9 @@ public class IncidenciaController {
     public ResponseEntity<?> filtrar(@PathVariable String prioridad) {
         return ResponseEntity.ok(service.filtrarPorPrioridad(prioridad));
     }
+
+    @GetMapping("/status")
+    public String status(){
+        return "Servicio funcionando correctamente";
+    }
 }
